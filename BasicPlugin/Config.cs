@@ -1,4 +1,5 @@
 ﻿using Exiled.API.Interfaces;
+using Dumbass;
 
 public class Config : IConfig {
 	public bool IsEnabled { get; set; } = true;
