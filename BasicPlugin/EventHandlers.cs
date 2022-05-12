@@ -1,7 +1,6 @@
 ﻿using System;
 using Exiled.API.Features;
 using Exiled.Events.EventArgs;
-using dumbass;
 
 public class EventHandlers : Plugin<Config> {
 	private Random rnd = new Random();
