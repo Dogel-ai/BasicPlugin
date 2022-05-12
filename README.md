@@ -3,6 +3,8 @@ Just a test plugin that:
 - Changes player's name on joining. 
 - Adds basic broadcasts on joining. 
 
+_It's my first time here, so forgive the mess this repo is_
+
 # How to install?
 
 1. Download ``BasicPlugin.dll`` from the [releases](https://github.com/Dogel-ai/BasicPlugin/releases) page
