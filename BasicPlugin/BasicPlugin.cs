@@ -7,20 +7,19 @@ public class BasicPlugin : Plugin<Config> {
 
 	public override string Name => "Basic Plugin";
 	public override string Author => "Dogel";
-	public override Version Version => new Version(1,0,0);
+	public override Version Version => new Version(1,0,1);
 
 	public override void OnEnabled() {
 		try {
 			EventHandler = new EventHandlers();
-			Player.Joined += EventHandler.PlayerJoined;
+			Player.Verified += EventHandler.OnVerified;
 		}
 		catch (Exception arg) {
 			Log.Error($"Loading error: {arg}");
-			if(ImADumbass)
 		}
 	}
 	public override void OnDisabled() {
-		Player.Joined -= EventHandler.PlayerJoined;
+		Player.Verified -= EventHandler.OnVerified;
 		EventHandler = null;
 	}
 }
