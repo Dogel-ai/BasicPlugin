@@ -16,6 +16,7 @@ public class BasicPlugin : Plugin<Config> {
 		}
 		catch (Exception arg) {
 			Log.Error($"Loading error: {arg}");
+			if(ImADumbass)
 		}
 	}
 	public override void OnDisabled() {
